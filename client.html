@@ -13,7 +13,7 @@
 	<script>
 		sessionStorage.setItem('id', prompt('id를 입력해주세요'));
 		let target = prompt('상대방 id를 입력해주세요');
-		target?target:sessionStorage.getItem('id');
+		target = target?target:sessionStorage.getItem('id');
 		
 		// const socket = io('http://192.168.0.111:3000');
 		const socket = io();
